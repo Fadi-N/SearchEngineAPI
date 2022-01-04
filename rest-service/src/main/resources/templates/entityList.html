@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>entityList - NIP</title>
+    <style>
+    .button {
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .button1 {
+      background-color: white;
+      color: black;
+      border: 2px solid #008CBA;
+      border-radius: 4px;
+    }
+
+    .button1:hover {
+      background-color: #008CBA;
+      color: white;
+    }
+
+    </style>
+</head>
+<body>
+    <div th:each="entity : ${entityList}">
+        Name: <span th:text="${entity.name}"/>
+        <br>
+        Regon: <span th:text="${entity.regon}"/>
+        <br>
+        Working Adrress: <span th:text="${entity.workingAddress}"/>
+    </div>
+    <br>
+    <a href="/">
+        <button class="button button1" >GO TO START</button>
+    </a>
+</body>
+</html>

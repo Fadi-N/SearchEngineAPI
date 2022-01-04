@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>entity - REGON</title>
+    <style>
+    .button {
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .button2 {
+      background-color: white;
+      color: black;
+      border: 2px solid #e6005c;
+      border-radius: 4px;
+    }
+
+    .button2:hover {
+      background-color: #e6005c;
+      color: white;
+    }
+      </style>
+</head>
+<body>
+    Name: <span th:text="${entity.name}"/>
+    <br>
+    NIP: <span th:text="${entity.nip}"/>
+    <br>
+    Working Adrress: <span th:text="${entity.workingAddress}"/>
+    <br>
+    Status Vat: <span th:text="${entity.statusVat}"/>
+    <br>
+    <br>
+    <a href="/">
+      <button class="button button2" >GO TO START</button>
+    </a>
+</body>
+</html>

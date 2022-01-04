@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>SEARCH</title>
+    <style>
+    .button {
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .button1 {
+      background-color: white;
+      color: black;
+      border: 2px solid #008CBA;
+      border-radius: 4px;
+    }
+
+    .button1:hover {
+      background-color: #008CBA;
+      color: white;
+    }
+
+    .button2 {
+      background-color: white;
+      color: black;
+      border: 2px solid #e6005c;
+      border-radius: 4px;
+    }
+
+    .button2:hover {
+      background-color: #e6005c;
+      color: white;
+    }
+
+
+    #nipNumber, #nipdate {
+      width:10%;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      border: 2px solid #008CBA;
+      border-radius: 4px;
+      background-color: #f8f8f8;
+      font-size: 16px;
+      resize: none;
+    }
+
+    #regonNumber, #regondate {
+      width:10%;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      border: 2px solid #e6005c;
+      border-radius: 4px;
+      background-color: #f8f8f8;
+      font-size: 16px;
+      resize: none;
+    }
+    </style>
+</head>
+<body>
+    <h3>Enter NIP and then select Date:</h3>
+
+    <form action="/nip">
+        <input id="nipNumber" name="nip">
+        <br><br>
+        <input type="date" id="nipdate" name="nipdate">
+        <br><br>
+        <button class="button button1">Submit</button>
+    </form>
+
+    <h3>Enter REGON and then select Date</h3>
+    <form action="/regon">
+        <input id="regonNumber" name="regon">
+        <br><br>
+        <input type="date" id="regondate" name="regondate">
+        <br><br>
+        <button class="button button2">Submit</button>
+    </form>
+
+</body>
+</html>
